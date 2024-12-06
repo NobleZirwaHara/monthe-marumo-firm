@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden !important;
+    font-family: "DM Sans", sans-serif !important;
+    font-optical-sizing: auto;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Urbanist", sans-serif;
+}
+
+p{
+    font-family: "DM Sans", sans-serif;
+}
+
+
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.about-section{
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.navigation-buttons {
+    display: flex;
+    transform: translateY(-50%);
+    gap: 1em;
+}
+
+.nav-btn {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fffbfd;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-items {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-items:first-child {
+    margin-left: auto;
+}
+
+.nav-items:last-child {
+    margin-left: auto;
+}
+
+.nav-items .nav-item {
+    padding: 2em;
+}
+
+.nav-item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.nav-item a:hover{
+    font-weight: 600;
+    color: #a02061;
+}
+
+#logo {
+    max-width: 300px;
+}
+
+.nav-item #logo img {
+    width: 100%;
+    position: relative;
+
+}
+
+.cols {
+    width: 100%;
+    display: flex;
+}
+
+.col {
+    width: 50%;
+    height: 100vh;
+}
+
+.col-right {
+    position: relative;
+    display: flex;
+    text-transform: uppercase;
+    border: none;
+    padding: 3em 2em 2em;
+}
+
+.col-right .header {
+    position: absolute;
+}
+
+.col-left {
+    position: relative;
+    width: 40%;
+    left: 0;
+    background: #fffbfd;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 0 6em 0 4em;
+}
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Spacing between buttons */
+    margin-top: 2rem; /* Adjust spacing from the text */
+}
+
+.nav-btn {
+    background: rgba(215, 215, 215, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s;
+}
+
+.nav-btn:hover {
+    background: #a02061;
+    color: #fff;
+}
+
+.copy {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.copy>* {
+    position: relative;
+}
+
+.col-left .header {
+    text-transform: capitalize;
+    font-size: 48px;
+    margin: 0.5em 0;
+    
+}
+
+.img-wrapper {
+    width: 300px;
+    height: 300px;
+    background: #ebe2d5;
+    margin: 2em 0;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info {
+    font-size: 16px;
+    color: rgb(60, 60, 60);
+    margin-bottom: 4em;
+}
+
+.footer {
+    display: flex;
+}
+
+.footer-item {
+    padding: 0 1em;
+    text-transform: uppercase;
+}
+
+@media(max-width: 900px) {
+
+    body,.hero-section,
+    .container {
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: column-reverse; /* Reverses the stacking order */
+    }
+    .hero-img {
+        position: relative; /* Change from absolute to relative */
+        width: 100%; /* Ensure it spans the container's width */
+        height: auto; /* Let the height adjust based on the content */
+        margin-top: 1em; /* Optional spacing between sections */
+        z-index: 0; /* Ensure it doesn’t overlap content */
+    }
+
+    .hero-img img {
+        position: relative; /* No need for absolute positioning */
+        width: 100%; /* Make it responsive */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Keep the image content proportional */
+    }
+
+    .cols {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .col-right{
+        display: none;
+    }
+
+    .col-left{
+       width: 100%;
+       padding-top: 33.3%;
+       padding-left: 2em;
+       padding-right: 2em;
+    }
+    
+
+
+    .nav-items:first-child,
+    .nav-items:last-child {
+        display: none;
+    }
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.loader-text-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #a02061;
+}
+
+.loader-text {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    color: #fff;
+}
+
+.revealer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #828387;
+}
+
+.pre-loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+}
+
+.loader-wrapper {
+    position: relative;
+    width: 10px;
+    height: 140px;
+    background: rgb(240, 240, 240);
+    border-radius: 4px;
+    overflow: hidden;
+    transform: rotate(45deg);
+}
+
+.loader {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(251, 0, 255);
+    background: linear-gradient(10deg, rgba(251, 0, 255, 1)0%, rgba(253, 29, 29, 1)100%);
+}
