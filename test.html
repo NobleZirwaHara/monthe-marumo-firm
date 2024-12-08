@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Section</title>
+    <style>
+        /* Base Styles */
+        body, html, * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .scroller {
+            height: 100vh;
+        }
+
+        h1{
+            font-size: 3rem;
+        }
+
+        .orange {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #753500;
+        }
+
+        .text {
+            color: #fff;
+        }
+
+        .black {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            background-color: #070707;
+        }
+
+        .blue {
+            height: 100vh;
+            background-color: #00026d;
+        }
+
+        .text-wrap {
+            position: relative;
+            overflow: hidden;
+            width: 600px;
+            height: 80vh;
+        }
+
+        .panel-text {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: left;
+            background-color: #070707;
+            transform: translateY(100%);
+            opacity: 0;
+        }
+
+        .panel-text.blue-text {
+            color: blue;
+        }
+
+        .panel-text.red-text {
+            color: red;
+        }
+
+        .panel-text.orange-text {
+            color: orange;
+        }
+
+        .panel-text.purple-text {
+            color: purple;
+        }
+
+        .panel-text.teal-text {
+            color: teal;
+        }
+
+        .p-wrap {
+            position: relative;
+            overflow: hidden;
+            width: 500px;
+            height: 60vh;
+        }
+
+        .panel {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .panel.blue {
+            background-image: url('/assets/img/team/Kgalalelo-N-Monthe-his-page.jpg');
+            background-position: center;
+            background-color: blue;
+        }
+
+        .panel.red {
+            background-image: url('/assets/img/team/Busang-D-Leburu-his-page.jpg');
+            background-position: center;
+        }
+
+        .panel.orange {
+            background-image: url('/assets/img/team/Dr-Baatlhodi-Molatlhegi-his-page.jpg');
+            background-position: center;
+        }
+
+        .panel.purple {
+            background-image: url('/assets/img/team/Kgotso-S.-Botlhole-his-page.jpg');
+            background-position: center;
+        }
+
+        .panel.teal {
+            background-image: url('/assets/img/team/Adelaide-M.-Seru-his-page.jpg');
+            background-position: center;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .black {
+                flex-direction: column; /* Stack items vertically */
+            }
+
+            .text {
+                font-size: 6vw; /* Increase font size for better readability */
+            }
+
+            .text-wrap, .p-wrap {
+                height: 50vh; /* Adjust height for smaller screens */
+            }
+
+            .panel-text {
+                font-size: 5vw; /* Scale text size */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .text {
+                font-size: 7vw; /* Further increase font size */
+            }
+
+            .text-wrap, .p-wrap {
+                width: 100%; /* Take full width */
+                height: 40vh; /* Adjust height further for small devices */
+            }
+
+            .panel-text {
+                font-size: 6vw; /* Adjust text size for readability */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="scroller">
+        <div class="orange">
+            <div class="text">This is some text inside of a div block.</div>
+        </div>
+        <div class="black">
+            <div class="text-wrap">
+                <div class="panel-text blue-text">
+                    <h1>Kgalalelo N Monthe</h1>
+                    <span>Managing Partner</span>
+                    <p></p>
+                </div>
+                <div class="panel-text red-text">
+                    <h1>Busang D. Leburu</h1>
+                    <span>Managing Partner</span>
+                    <p></p>
+                </div>
+                <div class="panel-text orange-text">
+                    <h1>Dr Baalthodi Molatlhegi</h1>
+                    <span>Founder & Senior Partner</span>
+                    <p></p>
+                </div>
+                <div class="panel-text purple-text">
+                    <h1>Kgotso S. Botlhole</h1>
+                    <span>Associate</span>
+                    <p></p>
+                </div>
+                <div class="panel-text teal-text">
+                    <h1>Adelaide M. Seru</h1>
+                    <span>Associate</span>
+                    <p></p>
+                </div>
+            </div>
+            <div class="p-wrap">
+                <div class="panel blue"></div>
+                <div class="panel red"></div>
+                <div class="panel orange"></div>
+                <div class="panel purple"></div>
+                <div class="panel teal"></div>
+            </div>
+        </div>
+        <div class="blue"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/smooth-scrollbar@8.6.3/dist/smooth-scrollbar.js"></script>
+    <script>
+        // Initialize Smooth Scrollbar
+        let bodyScrollBar = Scrollbar.init(document.body, {
+            damping: 0.1,
+            delegateTo: document,
+        });
+
+        // ScrollTrigger Scroller Proxy
+        gsap.registerPlugin(ScrollTrigger);
+        ScrollTrigger.scrollerProxy(".scroller", {
+            scrollTop(value) {
+                if (arguments.length) {
+                    bodyScrollBar.scrollTop = value;
+                }
+                return bodyScrollBar.scrollTop;
+            },
+        });
+        bodyScrollBar.addListener(ScrollTrigger.update);
+
+        // Panel Animations
+        gsap.set(".panel", { zIndex: (i, target, targets) => targets.length - i });
+        var images = gsap.utils.toArray('.panel:not(.teal)');
+        images.forEach((image, i) => {
+            var tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".black",
+                    scroller: ".scroller",
+                    start: () => "top -" + (window.innerHeight * (i + 0.5)),
+                    end: () => "+=" + window.innerHeight,
+                    scrub: true,
+                    toggleActions: "play none reverse none",
+                    invalidateOnRefresh: true,
+                }
+            });
+            tl.to(image, { height: 0 });
+        });
+
+        // Text Animations
+        gsap.set(".panel-text", { zIndex: (i, target, targets) => targets.length - i });
+        var texts = gsap.utils.toArray('.panel-text');
+        texts.forEach((text, i) => {
+            var tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".black",
+                    scroller: ".scroller",
+                    start: () => "top -" + (window.innerHeight * i),
+                    end: () => "+=" + window.innerHeight,
+                    scrub: true,
+                    toggleActions: "play none reverse none",
+                    invalidateOnRefresh: true,
+                }
+            });
+            tl.to(text, { duration: 0.33, opacity: 1, y: "50%" })
+              .to(text, { duration: 0.33, opacity: 0, y: "0%" }, 0.66);
+        });
+
+        // Create ScrollTrigger for Pinning
+        ScrollTrigger.create({
+            trigger: ".black",
+            scroller: ".scroller",
+            scrub: true,
+            markers: true,
+            pin: true,
+            start: "top top",
+            end: () => "+=" + ((images.length + 1) * window.innerHeight),
+            invalidateOnRefresh: true,
+        });
+    </script>
+</body>
+</html>

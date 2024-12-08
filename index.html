@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monthe Marumo & Co</title>
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="/css/test.css"> -->
+    <!-- <link rel="stylesheet" href="/css/vendor.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
@@ -14,154 +16,251 @@
 </head>
 
 <body>
-    <div class="hero-section">
-        <div class="hero-img">
-            <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="" srcset="">
-        </div>
-
-        <div class="container">
-            <div class="cols">
-                <div class="col-left">
-                    <h1 class="header"></h1>
-                    <h2 class="sub-header"></h2>
-                    <p class="info"></p>
-                    <div class="navigation-buttons">
-                        <button class="nav-btn" id="prevBtn"> <svg xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24" width="24" height="24">
-                                <path
-                                    d="M10.78 19.03a.75.75 0 0 1-1.06 0l-6.25-6.25a.75.75 0 0 1 0-1.06l6.25-6.25a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L5.81 11.5h14.44a.75.75 0 0 1 0 1.5H5.81l4.97 4.97a.75.75 0 0 1 0 1.06Z">
-                                </path>
-                            </svg></button>
-                        <button class="nav-btn" id="nextBtn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                width="24" height="24">
-                                <path
-                                    d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
-                                </path>
-                            </svg></button>
-                    </div>
-                </div>
-                <div class="col col-right">
-                </div>
+    <div class="main-container">
+        <div class="hero-section">
+            <div class="hero-img">
+                <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
             </div>
-            <nav>
-                <div class="nav-items">
-                    <div class="nav-item">
-                        <a href="#">practice areas</a>
-                    </div>
-                    <div class="nav-item">
-                        <a href="#">attorneys</a>
-                    </div>
-                </div>
-                <div class="nav-items">
-                    <div class="nav-item">
-                        <a href="#">
-                            <div id="logo">
-                                <img src="assets/img/monthe-marumo&co-logo.svg" alt="" srcset="">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="nav-items">
-                    <div class="nav-item">
-                        <a href="#">about</a>
-                    </div>
-                    <div class="nav-item">
-                        <a href="#">contact</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
 
-        <div class="loader-text-wrapper block">
-            <h1 class="loader-text">monthe marumo & co</h1>
-        </div>
-        <div class="revealer">
-            <div class="pre-loader block">
-                <div class="loader-wrapper">
-                    <div class="loader">
-                        <div class="loader-text-wrapper block">
-                            <h1 class="loader-text">monthe marumo & co</h1>
+            <div class="container">
+                <div class="cols">
+                    <div class="col-left">
+                        <h1 class="header"></h1>
+                        <h2 class="sub-header"></h2>
+                        <p class="info"></p>
+                        <div class="navigation-buttons">
+                            <button class="nav-btn" id="prevBtn">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path
+                                        d="M10.78 19.03a.75.75 0 0 1-1.06 0l-6.25-6.25a.75.75 0 0 1 0-1.06l6.25-6.25a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L5.81 11.5h14.44a.75.75 0 0 1 0 1.5H5.81l4.97 4.97a.75.75 0 0 1 0 1.06Z">
+                                    </path>
+                                </svg>
+                            </button>
+                            <button class="nav-btn" id="nextBtn">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path
+                                        d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col col-right"></div>
+                </div>
+                <nav>
+                    <div class="nav-items">
+                        <div class="nav-item"><a href="/practiceareas.html">Practice Areas</a></div>
+                        <div class="nav-item"><a href="#">Attorneys</a></div>
+                    </div>
+                    <div class="nav-items">
+                        <div class="nav-item">
+                            <a href="#">
+                                <div id="logo">
+                                    <img src="assets/img/monthe-marumo&co-logo.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="nav-items">
+                        <div class="nav-item"><a href="/about.html">About</a></div>
+                        <div class="nav-item"><a href="#">Contact</a></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="loader-text-wrapper block">
+                <h1 class="loader-text">Monthe Marumo & Co</h1>
+            </div>
+
+            <div class="revealer">
+                <div class="pre-loader block">
+                    <div class="loader-wrapper">
+                        <div class="loader">
+                            <div class="loader-text-wrapper block">
+                                <h1 class="loader-text">Monthe Marumo & Co</h1>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <section class="home-page-statement">
+            <span>our mission</span>
+            <p class="reveal-type" data-bg-color="#cccccc" data-fg-color="#a02061">Our mission is to deliver clarity,
+                confidence, and results, ensuring that you take the right steps toward resolving your legal matters
+                efficiently and effectively.</p>
+        </section>
 
+        <section class="home-page-statement">
+            <span>our vision</span>
+            <p class="reveal-type" data-bg-color="#3f0622" data-fg-color="#ffffff">Our mission is to deliver clarity,
+                confidence, and results, ensuring that you take the right steps toward resolving your legal matters
+                efficiently and effectively.</p>
+        </section>
+
+        <div>
+            <div class="grid-container">
+                <div class="grid">
+                    <div class="gridLayer">
+                        <div class="gridBlock"></div>
+                    </div>
+                    <div class="gridLayer">
+                        <div class="gridBlock"></div>
+                    </div>
+                    <div class="gridLayer">
+                        <div class="gridBlock"></div>
+                    </div>
+                    <div class="gridLayer centerPiece">
+                        <div class="gridBlock centerBlock"></div>
+                    </div>
+                    <div class="gridLayer">
+                        <div class="gridBlock"><a href="https://greensock.com" target="_blank"></a></div>
+                    </div>
+                    <div class="gridLayer">
+                        <div class="gridBlock"></div>
+                    </div>
+                    <div class="gridLayer">
+                        <div class="gridBlock"></div>
+                    </div>
+                    <div class="gridLayer">
+                        <div class="gridBlock"></div>
+                    </div>
+                    <div class="gridLayer">
+                        <div class="gridBlock"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-wrap">
+                <div class="footer-content">
+                    <div class="footer-left">
+                        <span class="footer-description">Get in touch</span>
+                        <p class="footer-info">Get in touch with us. Let’s work together to find the best legal
+                            solutions for your needs.<br>Reach out to us at <a href="mailto:partners@monthemarumo.com"
+                                class="email-link">partners@monthemarumo.com</a></p>
+                    </div>
+                    <div class="footer-right">
+                        <div class="contact-info">
+                            <span class="footer-description">Where To Find Us</span>
+                            <p>
+                                Unit 8G Portion 122 Millenium Park <br>
+                                P.O.Box 1991 <br>
+                                Gaborone
+                            </p>
+                        </div>
+                        <div class="contact-info">
+                            <span class="footer-description"><strong>contact info</strong></span>
+                            <p>Telephone: +267 395 1984</p>
+                            <p>Fax: +267 318 5016</p>
+                        </div>
+                        <div class="subscribe">
+                            <label for="email">Subscribe</label>
+                            <input type="email" id="email" placeholder="Your Email Address">
+                            <button class="subscribe-btn">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2024 &copy; Monthe Marumo & Co. All Rights Reserved </a></p>
+            </div>
+        </footer>
     </div>
-    <section>
-        <p class="reveal-type" data-bg-color="#cccccc" data-fg-color="#a02061">Our mission is to deliver clarity, confidence, and results, ensuring that you take the right steps toward resolving your legal matters efficiently and effectively</p>
-    </section>
-
-    <section>
-        <p class="reveal-type" data-bg-color="#3f0622" data-fg-color="#ffffff">The web isn't static anymore, interactivity
-            and motion now dominate.</p>
-    </section>
-
-    <section>
-
-    </section>
-
-
-
-
+    <script src="js/plugins.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/split-type"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
 
     <script>
+        gsap.registerPlugin(ScrollTrigger);
+    
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: ".grid-container",
+                start: "top top",
+                end: () => innerHeight * 4,
+                scrub: true,
+                pin: ".grid",
+                anticipatePin: 1
+            }
+        })
+            .set(".gridBlock:not(.centerBlock)", { autoAlpha: 0 })
+            .to(".gridBlock:not(.centerBlock)", { duration: 0.1, autoAlpha: 1 }, 0.001)
+            .from(".gridLayer", {
+                scale: 3.3333,
+                ease: "none",
+            });
+    
+        const size = Math.max(innerWidth, innerHeight);
+        gsap.set('.gridBlock', { backgroundImage: i => `url(https://picsum.photos/${size}/${size}?random=${i})` });
+    
+        const bigImg = new Image();
+        bigImg.addEventListener("load", function () {
+            gsap.to(".centerPiece .gridBlock", { autoAlpha: 1, duration: 0.5 });
+        });
+    
+        bigImg.src = `https://picsum.photos/${size}/${size}?random=50`;
+    </script>
 
-        gsap.registerPlugin(ScrollTrigger)
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
 
-        const splitTypes = document.querySelectorAll('.reveal-type')
+        document.querySelectorAll('.reveal-type').forEach((char) => {
+            const bg = char.dataset.bgColor;
+            const fg = char.dataset.fgColor;
 
-        splitTypes.forEach((char, i) => {
+            const text = new SplitType(char, { types: 'chars' });
 
-            const bg = char.dataset.bgColor
-            const fg = char.dataset.fgColor
+            gsap.fromTo(text.chars, {
+                color: bg,
+            }, {
+                color: fg,
+                duration: 0.3,
+                stagger: 0.02,
+                scrollTrigger: {
+                    trigger: char,
+                    start: 'top 80%',
+                    end: 'top 20%',
+                    scrub: true,
+                    markers: false,
+                    toggleActions: 'play play reverse reverse'
+                }
+            });
+        });
 
-            const text = new SplitType(char, { types: 'chars' })
+        const tl = gsap.timeline();
 
-            gsap.fromTo(text.chars,
-                {
-                    color: bg,
-                },
-                {
-                    color: fg,
-                    duration: 0.3,
-                    stagger: 0.02,
-                    scrollTrigger: {
-                        trigger: char,
-                        start: 'top 80%',
-                        end: 'top 20%',
-                        scrub: true,
-                        markers: false,
-                        toggleActions: 'play play reverse reverse'
-                    }
-                })
+        tl.from(".line span", 1.8, {
+            y: 100,
+            ease: "power4.out",
+            delay: 1,
+            skewY: 7,
+            stagger: {
+                amount: 0.3
+            }
         })
 
-
-        const lenis = new Lenis()
+        const lenis = new Lenis();
 
         lenis.on('scroll', (e) => {
-            console.log(e)
-        })
+            console.log(e);
+        });
 
         function raf(time) {
-            lenis.raf(time)
-            requestAnimationFrame(raf)
+            lenis.raf(time);
+            requestAnimationFrame(raf);
         }
 
-        requestAnimationFrame(raf)
-
-
+        requestAnimationFrame(raf);
     </script>
-    <script>
 
+    <script>
         // Loader Animations
-        var textWrapper = document.querySelector(".loader-text");
+        const textWrapper = document.querySelector(".loader-text");
         textWrapper.innerHTML = textWrapper.textContent.replace(
             /\S/g,
             "<span class='letter'>$&</span>"
@@ -170,244 +269,70 @@
         anime.timeline().add({
             targets: ".loader-text .letter",
             translateX: [40, 0],
-            translateZ: 0,
             opacity: [0, 1],
             easing: "easeOutExpo",
             duration: 1200,
             delay: (el, i) => 2400 + 30 * i,
         });
 
-        gsap.from(".loader-wrapper", 2, {
-            scale: 0.8,
-            ease: "power1.inOut",
-        });
+        gsap.from(".loader-wrapper", 2, { scale: 0.8, ease: "power1.inOut" });
+        gsap.from(".loader", 2, { top: "100%", ease: "power3.inOut" });
+        gsap.to(".loader-wrapper, .pre-loader", 1, { scale: 1.5, opacity: 0, display: "none", ease: "power3.inOut", delay: 2 });
+        gsap.from(".revealer", 1, { width: "0", ease: "power3.inOut", delay: 3 });
+        gsap.to(".revealer", 0.8, { left: "100%", ease: "power3.inOut", delay: 4 });
+        gsap.to(".loader-text-wrapper", 0.2, { opacity: 0, display: "none", ease: "power3.inOut", delay: 4 });
+        gsap.from(".col-left", 1, { left: "-100%", ease: "power3.inOut", delay: 4.5 });
+        gsap.from(".col-left .copy > div", 1, { x: -40, opacity: 0, ease: "power3.inOut", delay: 5, stagger: { amount: 0.3 } });
+        gsap.from(".col-right .header", 1, { x: -20, opacity: 0, ease: "power3.inOut", delay: 5.5 });
 
-        gsap.from(".loader", 2, {
-            top: "100%",
-            ease: "power3.inOut",
-        });
-
-        gsap.to(".loader-wrapper, .pre-loader", 1, {
-            scale: 1.5,
-            opacity: 0,
-            display: "none",
-            ease: "power3.inOut",
-            delay: 2,
-        });
-
-        gsap.from(".revealer", 1, {
-            width: "0",
-            ease: "power3.inOut",
-            delay: 3,
-        });
-
-        gsap.to(".revealer", 0.8, {
-            left: "100%",
-            ease: "power3.inOut",
-            delay: 4,
-        });
-
-        gsap.to(".loader-text-wrapper", 0.2, {
-            opacity: 0,
-            display: "none",
-            ease: "power3.inOut",
-            delay: 4,
-        });
-
-        gsap.from(".col-left", 1, {
-            left: "-100%",
-            ease: "power3.inOut",
-            delay: 4.5,
-        });
-
-        gsap.from(".col-left .copy > div", 1, {
-            x: -40,
-            opacity: 0,
-            ease: "power3.inOut",
-            delay: 5,
-            stagger: {
-                amount: 0.3,
-            },
-        });
-
-        gsap.from(".col-right .header", 1, {
-            x: -20,
-            opacity: 0,
-            ease: "power3.inOut",
-            delay: 5.5,
-        });
-        // Select elements
         const heroImages = [
             {
-                src: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'", // Image source for the first slide
-                header: "Bridging an edge in legal services",
-                // subheader: "First Subheader",
-                info: "At Monthe Marumo & Co., we blend a rich heritage with contemporary legal expertise to provide unparalleled service. Established in 1983 by former Chief Justice J.M. Nganunu, our firm stands as a beacon of trust, innovation, and excellence in Botswana’s legal landscape.",
+                src: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                header: "Practice Areas",
+                subHeader: "Our Mission",
+                info: "Our mission is to deliver clarity, confidence, and results, ensuring that you take the right steps toward resolving your legal matters efficiently and effectively."
             },
             {
-                src: 'https://plus.unsplash.com/premium_photo-1661540409860-fe00bb21a51c?q=80&w=3432&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', // Image source for the second slide
-                header: 'Right way to the legal help',
-                // subheader: 'Second Subheader',
-                info: 'At Monthe Marumo & Co., we believe in making the path to justice clear and straightforward. Whether you’re facing a complex legal challenge or need guidance in navigating everyday legal matters, we are committed to providing a seamless experience. Our expert team is here to listen, understand, and guide you every step of the way, ensuring that you receive the right advice and the best possible outcome.',
+                src: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                header: "M&M",
+                subHeader: "Our Mission",
+                info: "Our mission is to deliver clarity, confidence, and results, ensuring that you take the right steps toward resolving your legal matters efficiently and effectively."
             },
             {
-                src: 'https://plus.unsplash.com/premium_photo-1661488304619-7ce12da34bc3?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', // Image source for the third slide
-                header: 'Qualified legal advice',
-                // subheader: 'Third Subheader',
-                info: 'Our experienced lawyers are equipped with a wealth of knowledge across various legal sectors, ensuring that every recommendation is grounded in expertise and crafted with your best interests in mind. Trust us to provide you with the legal clarity and direction you deserve.',
+                src: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                header: "Win in life",
+                subHeader: "Our Mission",
+                info: "Our mission is to deliver clarity, confidence, and results, ensuring that you take the right steps toward resolving your legal matters efficiently and effectively."
             }
         ];
 
-        let currentIndex = 0; // Track the current slide index
+        let currentImageIndex = 0;
+        const heroSection = document.querySelector(".hero-section");
+        const heroImage = heroSection.querySelector(".hero-img img");
+        const header = heroSection.querySelector(".header");
+        const subHeader = heroSection.querySelector(".sub-header");
+        const info = heroSection.querySelector(".info");
 
-        const heroImage = document.querySelector(".hero-img img");
-        const header = document.querySelector(".col-left .header");
-        const subheader = document.querySelector(".col-left .sub-header");
-        const info = document.querySelector(".col-left .info");
-        const prevBtn = document.getElementById("prevBtn");
-        const nextBtn = document.getElementById("nextBtn");
-
-
-
-        // Update Slide Function
-        function updateSlide(index) {
-            const newSlide = heroImages[index];
-
-            // Animate out current content (reverse the slide effect)
-            gsap.to(".col-left", {
-                opacity: 0,
-                left: 0,
-                duration: 0.5,
-                delay: 0.5,  // Add a delay to wait for the hero image fade-in to finish
-                onComplete: () => {
-                    // Update text content after the left column slides out
-                    header.textContent = newSlide.header;
-                    subheader.textContent = newSlide.subheader;
-                    info.textContent = newSlide.info;
-
-                    // Animate new content in (slide in from the left)
-                    gsap.fromTo(
-                        ".col-left",
-                        { opacity: 0, left: "-100%", },
-                        { opacity: 1, left: 0, duration: 0.5 }
-                    );
-                },
-            });
-
-            // Animate the hero image change with fade effect
-            gsap.to(".hero-img img", {
-                opacity: 0,  // Fade out the current image
-                duration: 0.5,
-                onComplete: () => {
-                    heroImage.src = newSlide.src;  // Update to the new image source
-
-                    gsap.fromTo(".hero-img img", { opacity: 0 }, { opacity: 1, duration: 0.5 }); // Fade in the new image
-                },
-            });
+        function updateHeroImage() {
+            const image = heroImages[currentImageIndex];
+            heroImage.src = image.src;
+            header.textContent = image.header;
+            subHeader.textContent = image.subHeader;
+            info.textContent = image.info;
         }
 
-        // Navigation button handlers
-        prevBtn.addEventListener("click", () => {
-            currentIndex = (currentIndex - 1 + heroImages.length) % heroImages.length;
-            updateSlide(currentIndex);
+        document.getElementById("prevBtn").addEventListener("click", () => {
+            currentImageIndex = (currentImageIndex === 0) ? heroImages.length - 1 : currentImageIndex - 1;
+            updateHeroImage();
         });
 
-        nextBtn.addEventListener("click", () => {
-            currentIndex = (currentIndex + 1) % heroImages.length;
-            updateSlide(currentIndex);
+        document.getElementById("nextBtn").addEventListener("click", () => {
+            currentImageIndex = (currentImageIndex + 1) % heroImages.length;
+            updateHeroImage();
         });
 
-        // Initialize first slide with fade-in animation for the hero image and left column
-        // gsap.fromTo(".col-left", { opacity: 0, x: -50 }, { opacity: 1, x: 0, duration: 0.5 });
-        gsap.fromTo(".hero-img img", { opacity: 0 }, { opacity: 1, duration: 0.5 });
-
-        updateSlide(currentIndex);
+        updateHeroImage();
     </script>
 </body>
-<!-- <script>
-
-    var textWrapper = document.querySelector(".loader-text");
-    textWrapper.innerHTML = textWrapper.textContent.replace(
-        /\S/g,
-        "<span class='letter'>$&</span>"
-    );
-
-    anime.timeline().add({
-        targets: ".loader-text .letter",
-        translateX: [40, 0],
-        transalteZ: 0,
-        opacity: [0, 1],
-        easing: "easeOutExpo",
-        duration: 1200,
-        delay: (el, i) => 2400 + 30 * i,
-    });
-
-    gsap.from(".loader-wrapper", 2, {
-        scale: 0.8,
-        ease: "power1.inOut",
-
-    });
-
-    gsap.from(".loader", 2, {
-        top: "100%",
-        ease: "power3.inOut",
-
-    });
-
-    gsap.to(".loader-wrapper, .pre-loader", 1, {
-        scale: 1.5,
-        opacity: 0,
-        display: "none",
-        ease: "power3.inOut",
-        delay: 2,
-    },
-        "-=1"
-    );
-
-    gsap.from(".revealer", 1, {
-        width: "0",
-        ease: "power3.inOut",
-        delay: 3,
-    });
-
-    gsap.to(".revealer", 0.8, {
-        left: "100%",
-        ease: "power3.inOut",
-        delay: 4,
-    });
-
-    gsap.to(".loader-text-wrapper", 0.2, {
-        opacity: 0,
-        display: "none",
-        ease: "power3.inOut",
-        delay: 4
-    })
-
-    gsap.from(".col-left", 1, {
-        left: "-100%",
-        ease: "power3.inOut",
-        delay: 4.5,
-    })
-
-    gsap.from(".col-left .copy > div", 1, {
-        x: -40,
-        opacity: 0,
-        ease: "power3.inOut",
-        delay: 5,
-        stagger: {
-            amount: 0.3
-        }
-    })
-
-    gsap.from(".col-right .header", 1, {
-        x: -20,
-        opacity: 0,
-        ease: "power3.inOut",
-        delay: 5.5,
-    })
-
-
-
-</script> -->
 
 </html>

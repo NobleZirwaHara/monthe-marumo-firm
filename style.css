@@ -1,6 +1,12 @@
+/* -----------------------------------------------
+   Font Imports
+----------------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
+/* -----------------------------------------------
+   Global Styles
+----------------------------------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -8,30 +14,43 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     overflow-x: hidden;
+    background-color: #fffbfd;
+    position: relative;
 }
 
 body {
     width: 100%;
     height: 100%;
-    overflow-x: hidden !important;
     font-family: "DM Sans", sans-serif !important;
     font-optical-sizing: auto;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Urbanist", sans-serif;
 }
 
 
+/* -----------------------------------------------
+   Hero Section Styles
+----------------------------------------------- */
 .hero-section {
     width: 100%;
     height: 100vh;
     overflow: hidden;
 }
 
+/* -----------------------------------------------
+   Section Styles
+----------------------------------------------- */
 section {
     height: 100vh;
     padding: 0 clamp(4rem, 12vw, 20rem);
@@ -56,6 +75,19 @@ section:nth-of-type(4) {
     color: white;
 }
 
+section.home-page-statement span {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 5rem;
+    color: invert;
+}
+
+
+
+
+/* -----------------------------------------------
+   Container and Image Styles
+----------------------------------------------- */
 .container {
     position: relative;
     width: 100%;
@@ -79,6 +111,9 @@ section:nth-of-type(4) {
     z-index: -1;
 }
 
+/* -----------------------------------------------
+   Navigation Button Styles
+----------------------------------------------- */
 .navigation-buttons {
     display: flex;
     transform: translateY(-50%);
@@ -100,14 +135,24 @@ section:nth-of-type(4) {
     outline: none;
 }
 
+.nav-btn:hover {
+    background: #a02061;
+    color: #fff;
+}
+
+/* -----------------------------------------------
+   Navbar Styles
+----------------------------------------------- */
 nav {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     background: #fffbfd;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     display: flex;
     transition: transform 0.3s ease-in-out;
+    z-index: 999;
 }
 
 .nav-items {
@@ -138,7 +183,7 @@ nav {
     color: #000;
 }
 
-.nav-item a:hover{
+.nav-item a:hover {
     font-weight: 600;
     color: #a02061;
 }
@@ -150,9 +195,11 @@ nav {
 .nav-item #logo img {
     width: 100%;
     position: relative;
-
 }
 
+/* -----------------------------------------------
+   Column Layout Styles
+----------------------------------------------- */
 .cols {
     width: 100%;
     display: flex;
@@ -187,34 +234,10 @@ nav {
     align-items: left;
     padding: 0 6em 0 4em;
 }
-.nav-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px; /* Spacing between buttons */
-    margin-top: 2rem; /* Adjust spacing from the text */
-}
 
-.nav-btn {
-    background: rgba(215, 215, 215, 0.5);
-    border: none;
-    color: white;
-    font-size: 24px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    outline: none;
-    transition: background 0.3s;
-}
-
-.nav-btn:hover {
-    background: #a02061;
-    color: #fff;
-}
-
+/* -----------------------------------------------
+   Copy Section Styles
+----------------------------------------------- */
 .copy {
     position: relative;
     display: flex;
@@ -232,9 +255,11 @@ nav {
     text-transform: capitalize;
     font-size: 48px;
     margin: 0.5em 0;
-    
 }
 
+/* -----------------------------------------------
+   Image Wrapper Styles
+----------------------------------------------- */
 .img-wrapper {
     width: 300px;
     height: 300px;
@@ -248,24 +273,147 @@ nav {
     object-fit: cover;
 }
 
+/* -----------------------------------------------
+   Info Section Styles
+----------------------------------------------- */
 .info {
     font-size: 16px;
     color: rgb(60, 60, 60);
     margin-bottom: 4em;
 }
 
+/* -----------------------------------------------
+   Footer Styles
+----------------------------------------------- */
 .footer {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
     display: flex;
+    flex-direction: column;
+    padding: 10rem 10rem;
+    margin: 0 auto;
+    margin-top: auto;
+    position: relative !important;
 }
 
-.footer-item {
-    padding: 0 1em;
+
+.footer-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer .footer-description{
+    font-size: 14px;
+    font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #a02061;
+    line-height: 2rem;
 }
 
+.footer-left,
+.footer-right {
+    width: 48%;
+}
+
+.footer-title {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.footer-description {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.footer-info {
+    font-size: 2.8rem;
+    margin-top: 20px;
+}
+
+.email-link {
+    color: #a02061;
+    text-decoration: none;
+}
+
+.footer-right .contact-info,
+.footer-right .subscribe {
+    margin-bottom: 20px;
+}
+
+.subscribe label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.subscribe input {
+    padding: 8px;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.subscribe-btn {
+    padding: 10px 15px;
+    background-color: #FF6F61;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.subscribe-btn:hover {
+    background-color: #E05A4B;
+}
+
+.footer-bottom {
+    margin-top: 10rem;
+    width: 100%;
+    border-top: 1px solid #828387;
+
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom .footer-social {
+    list-style: none;
+    display: flex;
+    margin-left: 0;
+}
+
+.footer-bottom .footer-social  li {
+    padding-left : 0;
+    margin-right : .8rem;
+}
+
+
+
+.footer-bottom a {
+    color: #FF6F61;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* -----------------------------------------------
+   Media Queries for Responsiveness
+----------------------------------------------- */
 @media(max-width: 900px) {
 
-    body,.hero-section,
+    body,
+    .hero-section,
     .container {
         height: 100%;
         overflow-x: hidden;
@@ -273,21 +421,22 @@ nav {
 
     .hero-section {
         display: flex;
-        flex-direction: column-reverse; /* Reverses the stacking order */
+        flex-direction: column-reverse;
     }
+
     .hero-img {
-        position: relative; /* Change from absolute to relative */
-        width: 100%; /* Ensure it spans the container's width */
-        height: auto; /* Let the height adjust based on the content */
-        margin-top: 1em; /* Optional spacing between sections */
-        z-index: 0; /* Ensure it doesn’t overlap content */
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-top: 1em;
+        z-index: 0;
     }
 
     .hero-img img {
-        position: relative; /* No need for absolute positioning */
-        width: 100%; /* Make it responsive */
-        height: auto; /* Maintain aspect ratio */
-        object-fit: cover; /* Keep the image content proportional */
+        position: relative;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 
     .cols {
@@ -298,18 +447,16 @@ nav {
         width: 100%;
     }
 
-    .col-right{
+    .col-right {
         display: none;
     }
 
-    .col-left{
-       width: 100%;
-       padding-top: 33.3%;
-       padding-left: 2em;
-       padding-right: 2em;
+    .col-left {
+        width: 100%;
+        padding-top: 33.3%;
+        padding-left: 2em;
+        padding-right: 2em;
     }
-    
-
 
     .nav-items:first-child,
     .nav-items:last-child {
@@ -317,6 +464,9 @@ nav {
     }
 }
 
+/* -----------------------------------------------
+   Loader and Pre-loader Styles
+----------------------------------------------- */
 .block {
     display: flex;
     justify-content: center;
@@ -374,5 +524,206 @@ nav {
     width: 100%;
     height: 100%;
     background: rgb(251, 0, 255);
-    background: linear-gradient(10deg, rgba(251, 0, 255, 1)0%, rgba(253, 29, 29, 1)100%);
+    background: linear-gradient(10deg, rgba(251, 0, 255, 1) 0%, rgba(253, 29, 29, 1) 100%);
 }
+
+/* -----------------------------------------------
+   About Section Code
+----------------------------------------------- */
+/* Add specific styles for about section if needed */
+
+
+/* Base Styles */
+
+
+
+
+.gridBlock {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  
+  /* Grid almost fully pulled from https://www.rino-pelle.com/ */
+  .grid-container {
+    margin-top: 8rem;
+    width: 100vw;
+    height: 200vh;
+    position: relative;
+  }
+  .grid {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 70vw;
+    height: 60vw;
+    margin: 0 calc(100vw / 20 * 3);
+    position: absolute;
+    
+  }
+  @media only screen and (max-width: 580px) {
+    .grid {
+      margin: 0;
+      width: 100vw;
+      height: 89.444vw;
+    }
+  }
+  .gridBlock {
+    background-size: cover;
+    background-color: darkgray;
+    border-radius: 0.5rem;
+  }
+  .gridLayer {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    will-change: transform;
+    transform-origin: 44.951% 50%;
+  }
+  .gridLayer:nth-child(1) .gridBlock {
+    top: 5vw;
+    left: 20vw;
+    width: 10vw;
+    border-radius: 2rem;
+    height: 10vw;
+  }
+  @media only screen and (max-width: 580px) {
+    .gridLayer:nth-child(1) .gridBlock {
+      top: 11.111vw;
+      left: 23.889vw;
+      width: 15vw;
+      height: 15vw;
+    }
+  }
+  .gridLayer:nth-child(2) .gridBlock {
+    top: 0;
+    left: 32.5vw;
+    width: 15vw;
+    height: 15vw;
+  }
+  @media only screen and (max-width: 580px) {
+    .gridLayer:nth-child(2) .gridBlock {
+      top: 0;
+      left: 43.333vw;
+      width: 26.389vw;
+      height: 26.389vw;
+    }
+  }
+  .gridLayer:nth-child(3) .gridBlock {
+    left: 0;
+    top: 25vw;
+    width: 15vw;
+    height: 15vw;
+  }
+  @media only screen and (max-width: 580px) {
+    .gridLayer:nth-child(3) .gridBlock {
+      top: 30.278vw;
+      left: 0;
+      width: 26.389vw;
+      height: 26.389vw;
+    }
+  }
+  .gridLayer:nth-child(4) .gridBlock {
+    top: 17.5vw;
+    left: 17.5vw;
+    width: 30vw;
+    height: 30vw;
+  }
+  @media only screen and (max-width: 580px) {
+    .gridLayer:nth-child(4) .gridBlock {
+      top: 30.278vw;
+      left: 30.278vw;
+      width: 39.444vw;
+      height: 39.444vw;
+    }
+  }
+  .gridLayer:nth-child(5) {
+    z-index: 1;
+  }
+  .gridLayer:nth-child(5) .gridBlock {
+    top: 20vw;
+    left: 50vw;
+    width: 5vw;
+    height: 5vw;
+  }
+  @media only screen and (max-width: 580px) {
+    .gridLayer:nth-child(5) .gridBlock {
+      top: 23.889vw;
+      left: 73.889vw;
+      width: 15.278vw;
+      height: 15.278vw;
+    }
+  }
+  .gridLayer:nth-child(5) a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .gridLayer:nth-child(5) svg {
+    width: 1.75vw;
+  }
+  @media only screen and (max-width: 580px) {
+    .gridLayer:nth-child(5) svg {
+      width: 4.722vw;
+    }
+  }
+  .gridLayer:nth-child(6) .gridBlock {
+    left: 50vw;
+    top: 27.5vw;
+    width: 20vw;
+    height: 20vw;
+  }
+  @media only screen and (max-width: 580px) {
+    .gridLayer:nth-child(6) .gridBlock {
+      top: 43.889vw;
+      left: 73.889vw;
+      width: 26.389vw;
+      height: 26.389vw;
+    }
+  }
+  .gridLayer:nth-child(7) .gridBlock {
+    left: 10vw;
+    top: 42.5vw;
+    width: 5vw;
+    height: 5vw;
+  }
+  @media only screen and (max-width: 580px) {
+    .gridLayer:nth-child(7) .gridBlock {
+      display: none;
+    }
+  }
+  .gridLayer:nth-child(8) .gridBlock {
+    bottom: 5vw;
+    left: 42.5vw;
+    width: 5vw;
+    height: 5vw;
+  }
+  @media only screen and (max-width: 580px) {
+    .gridLayer:nth-child(8) .gridBlock {
+      display: none;
+    }
+  }
+  .gridLayer:nth-child(9) .gridBlock {
+    bottom: 0;
+    left: 50vw;
+    width: 10vw;
+    height: 10vw;
+  }
+  @media only screen and (max-width: 580px) {
+    .gridLayer:nth-child(9) .gridBlock {
+      top: 73.889vw;
+      left: 58.889vw;
+      width: 15.278vw;
+      height: 15.278vw;
+    }
+  }
+  .gridBlock {
+    display: block;
+    position: absolute;
+  }
+  
