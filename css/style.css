@@ -303,6 +303,24 @@ nav {
     margin-bottom: 4em;
 }
 
+.home-page-statement span{
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #a02061;
+    line-height: 2rem;
+}
+
+
+.home-page-statement:nth-of-type(2) span{
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #fff;
+    margin-bottom: 1rem;
+}
 /* -----------------------------------------------
    Gallery Section
 ----------------------------------------------- */
