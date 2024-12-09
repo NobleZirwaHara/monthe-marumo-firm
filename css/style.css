@@ -154,6 +154,9 @@ section.home-page-statement span {
     color: #fff;
 }
 
+.nav-btn:hover svg {
+    fill: white; /* Changes the color to white on hover */
+}
 /* -----------------------------------------------
    Navbar Styles
 ----------------------------------------------- */
@@ -275,6 +278,15 @@ nav {
     text-transform: capitalize;
     font-size: 48px;
     margin: 0.5em 0;
+}
+
+.col-left .sub-header{
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #a02061;
+    line-height: 2rem;
 }
 
 /* -----------------------------------------------
@@ -1037,6 +1049,8 @@ nav {
     .hero-img img {
         position: relative;
         width: 100%;
+        min-height: 500px;
+        height: 100%;
         height: auto;
         object-fit: cover;
     }
