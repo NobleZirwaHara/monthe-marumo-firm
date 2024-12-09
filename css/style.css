@@ -135,8 +135,8 @@ section.home-page-statement span {
 }
 
 .nav-btn {
-    background: rgba(0, 0, 0, 0.5);
-    border: none;
+    border: 1px solid #828387;
+    background: none;
     color: white;
     font-size: 24px;
     width: 50px;
@@ -151,6 +151,7 @@ section.home-page-statement span {
 
 .nav-btn:hover {
     background: #a02061;
+    border: none;
     color: #fff;
 }
 
@@ -538,13 +539,11 @@ nav {
 }
 
 .title {
-    font-size: 40px;
-    font-weight: 500;
+    font-size: 2.5rem;
     line-height: 127.5%;
     position: relative;
     text-transform: capitalize;
     display: inline-flex;
-    padding: 0 7px;
 }
 
 .title::before {
@@ -572,6 +571,9 @@ nav {
 
 .process__intro {
     margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .process__title {
@@ -579,7 +581,7 @@ nav {
 }
 
 .process__text {
-    max-width: 18.25rem;
+    max-width: 40rem;
 }
 
 .accordions__list {
@@ -746,6 +748,11 @@ nav {
     .open .accordions__content {
         padding: 0px 20px 20px;
     }
+
+    .grid-container{
+        margin: 0;
+        height: 200vh;
+    }
 }
 
 /* -----------------------------------------------
@@ -760,6 +767,8 @@ nav {
     margin: 0 auto;
     position: relative;
     min-height: 100vh;
+    background-color: #f3f3f3;
+    /* color: #fff; */
     /* Allow the section to fill the viewport for scrolling */
 }
 
@@ -813,7 +822,7 @@ nav {
     /* Start with cards hidden for animation */
     transform: translateY(100px);
     /* Start with cards below the screen */
-    max-height: 450px;
+    max-height: 600px;
     /* Fixed height for the cards */
     height: 100%;
     flex: 0 0 calc(50% - 10px);
@@ -835,7 +844,7 @@ nav {
 
 /* Team Card Text */
 .team-card h2 {
-    font-size: 20px;
+    font-size: 2rem;
     margin: 10px 0 5px;
 }
 
