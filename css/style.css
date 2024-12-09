@@ -779,12 +779,11 @@ nav {
 
 /* Title and Paragraph in the header */
 .team-header h2 {
-    font-size: 28px;
+    font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
 .team-header p {
-    font-size: 16px;
     line-height: 1.5;
     color: #555;
 }
@@ -835,14 +834,18 @@ nav {
 }
 
 /* Team Card Text */
-.team-card h3 {
+.team-card h2 {
     font-size: 20px;
     margin: 10px 0 5px;
 }
 
-.team-card p {
+.team-card span {
     font-size: 14px;
-    color: #777;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #a02061;
+    line-height: 2rem;
 }
 
 
@@ -1036,11 +1039,24 @@ nav {
         display: none;
     }
 
-    .footer{
+    /* .team-section {
+        flex-direction: column;
+
+    } */
+
+    .team-section,.footer{
         padding: 10rem 2rem;
         margin: 0 auto;
         margin-top: auto;
         display: block;
+    }
+
+    .team-cards{
+        flex-direction: column;
+    }
+
+    .team-card{
+        padding: 0;
     }
 
     .footer-wrap{
