@@ -17,7 +17,7 @@
             </div>
             <div class="nav-items">
                 <div class="nav-item">
-                    <a href="#">
+                    <a href="/">
                         <div id="logo">
                             <img src="/assets/img/monthe-marumo&co-logo.svg" alt="">
                         </div>
@@ -174,36 +174,36 @@
         gsap.registerPlugin(ScrollTrigger);
 
         // Function to apply GSAP animation on desktop and disable it on mobile
-        function applyScrollAnimation() {
-            if (window.innerWidth > 768) {
-                // Apply GSAP scroll animation for desktop
-                gsap.to('.image-profile-wrapper', {
-                    scrollTrigger: {
-                        trigger: '.profile-section', // Trigger when the section is in view
-                        start: 'top top', // Start when the section reaches the top of the viewport
-                        end: 'bottom top', // End when the section scrolls past the top of the viewport
-                        scrub: true, // Smooth scrolling behavior
-                        pin: '.image-profile-wrapper', // Pin the header during scrolling
-                        // markers: true, // Optional, for debugging purposes
-                        onLeave: () => {
-                            // Release the pin once the section scroll is complete
-                        },
-                        onEnterBack: () => {
-                            // Make sure the header comes back when scrolling back into the section
-                        }
-                    }
-                });
-            } else {
-                // Disable GSAP animation for mobile
-                gsap.killTweensOf('.image-profile-wrapper'); // Kill any ongoing animations or scroll triggers
-            }
-        }
+        // function applyScrollAnimation() {
+        //     if (window.innerWidth > 768) {
+        //         // Apply GSAP scroll animation for desktop
+        //         gsap.to('.image-profile-wrapper', {
+        //             scrollTrigger: {
+        //                 trigger: '.profile-section', // Trigger when the section is in view
+        //                 start: 'top top', // Start when the section reaches the top of the viewport
+        //                 end: 'bottom top', // End when the section scrolls past the top of the viewport
+        //                 scrub: true, // Smooth scrolling behavior
+        //                 pin: '.image-profile-wrapper', // Pin the header during scrolling
+        //                 // markers: true, // Optional, for debugging purposes
+        //                 onLeave: () => {
+        //                     // Release the pin once the section scroll is complete
+        //                 },
+        //                 onEnterBack: () => {
+        //                     // Make sure the header comes back when scrolling back into the section
+        //                 }
+        //             }
+        //         });
+        //     } else {
+        //         // Disable GSAP animation for mobile
+        //         gsap.killTweensOf('.image-profile-wrapper'); // Kill any ongoing animations or scroll triggers
+        //     }
+        // }
 
-        // Initial call to apply the effect
-        applyScrollAnimation();
+        // // Initial call to apply the effect
+        // applyScrollAnimation();
 
-        // Add event listener to apply the effect on window resize
-        window.addEventListener('resize', applyScrollAnimation);
+        // // Add event listener to apply the effect on window resize
+        // window.addEventListener('resize', applyScrollAnimation);
 
     </script>
 </body>
