@@ -765,6 +765,7 @@ nav {
 
     .accordions__title {
         font-size: 20px;
+        color: #000 !important;
     }
 
     .accordions__icon {
