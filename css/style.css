@@ -14,7 +14,7 @@
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --primary: #a02061;
     --secondary: #f4f4f4;
 }
@@ -49,11 +49,11 @@ h6 {
     font-family: "Urbanist", sans-serif !important;
 }
 
-p{
+p {
     font-size: 1.2rem;
 }
 
-span{
+span {
     font-size: 1rem;
 }
 
@@ -136,8 +136,10 @@ section.home-page-statement span {
 }
 
 .nav-btn:hover svg {
-    fill: white; /* Changes the color to white on hover */
+    fill: white;
+    /* Changes the color to white on hover */
 }
+
 /* -----------------------------------------------
    Navbar Styles
 ----------------------------------------------- */
@@ -289,7 +291,7 @@ nav {
     margin: 0.5em 0;
 }
 
-.col-left .sub-header{
+.col-left .sub-header {
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -323,7 +325,7 @@ nav {
     margin-bottom: 4em;
 }
 
-.home-page-statement span{
+.home-page-statement span {
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -333,7 +335,7 @@ nav {
 }
 
 
-.home-page-statement:nth-of-type(2) span{
+.home-page-statement:nth-of-type(2) span {
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -341,6 +343,7 @@ nav {
     color: #fff;
     margin-bottom: 1rem;
 }
+
 /* -----------------------------------------------
    Gallery Section
 ----------------------------------------------- */
@@ -788,7 +791,7 @@ nav {
         padding: 0px 20px 20px;
     }
 
-    .grid-container{
+    .grid-container {
         margin: 0;
         height: 200vh;
     }
@@ -906,37 +909,124 @@ nav {
 }
 
 /* -----------------------------------------------
+   SINGLE PAGE STYLES
+----------------------------------------------- */
+.profile-section {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+    width: 100%;
+    padding: 10rem 5%;
+    min-height: 100%; /* Ensure enough height for scrolling */
+    /* background-color: #f3f3f3; */
+    box-sizing: border-box;
+    position: relative;
+}
+
+.image-profile-section {
+    max-width: 500px !important;
+    width: 100%;
+}
+
+.profile-card {
+    text-align: left;
+    position: sticky; /* For fallback browsers */
+    top: 20px;
+}
+
+
+.about-profile-section {
+    /* flex: 2; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-profile-wrapper {
+    overflow: hidden;
+}
+
+.about-profile-section h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.about-profile-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.profile-stats-wrapper{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-stats-wrapper span{
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #a02061;
+    line-height: 2rem;
+}
+
+.profile-stats-wrapper .stat-card{
+    display: flex;
+    gap: 2rem;
+}
+
+.profile-stats-wrapper .stat-card img{
+    width: 50px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .profile-card {
+        text-align: left;
+        position: relative; /* For fallback browsers */
+        top: 20px;
+    }
+    
+
+
+}
+
+/* -----------------------------------------------
    ABOUT PAGE STYLES
 ----------------------------------------------- */
-.about-cover{
+.about-cover {
     background-color: var(--primary);
     color: var(--secondary);
     position: relative;
 }
 
-.about-hero{
+.about-hero {
     position: relative;
     width: 100%;
     height: 100%;
 }
 
-.about-hero-wrapper{
-    padding: 6.4rem ;
+.about-hero-wrapper {
+    padding: 6.4rem;
 }
 
-.about-hero-paragraph{
+.about-hero-paragraph {
     padding-top: 80vh;
     padding-left: 40rem;
     padding-right: 6rem;
     padding-bottom: 20rem;
 }
 
-.about-hero-paragraph-text, .about-hero-paragraph-text span{
+.about-hero-paragraph-text,
+.about-hero-paragraph-text span {
     font-size: 2rem;
     line-height: 1.2;
 }
 
-.about-hero-background{
+.about-hero-background {
     position: fixed;
     left: 0;
     top: 0;
@@ -945,7 +1035,7 @@ nav {
     z-index: 1;
 }
 
-.about-hero-background-image{
+.about-hero-background-image {
     width: 100%;
     height: 120%;
     object-fit: cover;
@@ -962,40 +1052,31 @@ nav {
     margin-bottom: 5px;
 }
 
-@media screen and (max-width: 768px){
-    /* html{
-        font-size: calc(100vw / 768 * 10);
-    }
+@media screen and (max-width: 768px) {
 
-    h3 {
-        font-size: 2.4rem;
-    }
-
-    p,span{
-        font-size: 2.4rem;
-    } */
-    .about-hero-paragraph-text, .about-hero-paragraph-text span{
+    .about-hero-paragraph-text,
+    .about-hero-paragraph-text span {
         font-size: 1.6rem;
         line-height: 1.2;
     }
-    
 
-    .about-hero-paragraph{
+
+    .about-hero-paragraph {
         padding-left: 0;
         padding-right: 0;
         width: 100%;
     }
 
-    .about-hero-background-image{
+    .about-hero-background-image {
         height: 100%;
     }
 
-    .about-hero-wrapper{
+    .about-hero-wrapper {
         padding: 10rem 2rem;
         margin: 0 auto;
     }
 
-    
+
 }
 
 /* -----------------------------------------------
@@ -1187,26 +1268,28 @@ nav {
 
     } */
 
-    .team-section,.footer{
+    .team-section, .profile-section, 
+    .footer {
         padding: 10rem 2rem;
         margin: 0 auto;
         margin-top: auto;
         display: block;
     }
 
-    .team-cards{
+    .team-cards {
         flex-direction: column;
     }
 
-    .team-card{
+    .team-card {
         padding: 0;
     }
 
-    .footer-wrap{
+    .footer-wrap {
         flex-direction: column;
     }
 
-    .footer-left, .footer-right{
+    .footer-left,
+    .footer-right {
         width: 100%;
     }
 
@@ -1215,7 +1298,7 @@ nav {
         margin: 20px 0;
     }
 
-    .footer-bottom{
+    .footer-bottom {
         flex-direction: column;
         text-align: center;
     }
