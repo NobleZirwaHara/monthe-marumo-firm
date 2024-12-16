@@ -928,10 +928,18 @@ nav {
     position: relative;
 }
 
+.image-profile-wrapper{
+    height: 100%;
+}
+
 .image-profile-section {
     max-width: 500px !important;
     width: 100%;
     
+}
+
+.profile-card{
+    height: 100%;
 }
 
 .profile-card img{
@@ -948,8 +956,15 @@ nav {
     gap: 20px;
 }
 
+.about-profile-header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: baseline;
+}
+
 .about-profile-wrapper {
-    overflow: hidden;
+    height: 100%;
 }
 
 .about-profile-section h1 {
