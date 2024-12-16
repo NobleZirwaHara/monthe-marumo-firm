@@ -1016,6 +1016,85 @@ nav {
 }
 
 /* -----------------------------------------------
+   ATTORNEYS PAGE STYLES
+----------------------------------------------- */
+
+/* General Section Styling */
+.attorneys-hero-section {
+    position: relative; /* Allows pseudo-element positioning */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 10rem;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    background: url('../assets/img/team.jpg') no-repeat center center/cover; /* Background Image */
+    color: #fff; /* Text color for contrast */
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.attorneys-hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(160, 32, 97, 0.9); /* Overlay with transparency */
+    z-index: 1; /* Place it above the background image */
+}
+
+.attorneys-hero-wrapper {
+    position: relative; /* Keeps content above the overlay */
+    z-index: 2; /* Ensures text and images are above the overlay */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.attorneys-hero-text {
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 4;
+}
+
+.attorneys-hero-text h1 {
+    font-size: 52px;
+    margin-bottom: 1rem;
+    width: 50%;
+}
+
+.attorneys-hero-text p {
+    font-size: 1rem;
+    color: #ddd;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Carousel Styling */
+.attorneys-hero-images {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    gap: 1rem;
+    width: calc(300px * 12); /* Adjust based on number of images */
+}
+
+.carousel img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* -----------------------------------------------
    ABOUT PAGE STYLES
 ----------------------------------------------- */
 .about-cover {
