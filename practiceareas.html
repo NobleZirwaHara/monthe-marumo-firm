@@ -1,123 +1,530 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_2.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Practice Areas</title>
+    <title>Practice Areas | Monthe Marumo & Co</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="/css/test.css"> -->
+    <!-- <link rel="stylesheet" href="/css/vendor.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 </head>
+
 <body>
-    <main class="app">
-        <div class="section">
-            <div class="section-header">
-                <div class="section-header-list">
-                <div class="section-container">
-                    <div class="section-col">
-                        <div class="section-col-media">
-                            <img src="https://plus.unsplash.com/premium_photo-1695449439526-9cebdbfa1a2c?q=80&w=3418&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="section-col-image">
+    <nav>
+        <div class="navbar-content">
+            <div class="nav-items">
+                <div class="nav-item"><a href="/practiceareas.html">Practice Areas</a></div>
+                <div class="nav-item"><a href="./attorneys.html">Attorneys</a></div>
+            </div>
+            <div class="nav-items">
+                <div class="nav-item">
+                    <a href="/">
+                        <div id="logo">
+                            <img src="assets/img/monthe-marumo&co-logo.svg" alt="">
                         </div>
-                        <div class="section-col-caption">
-                            <span>
-                                This is the title of the card
-                            </span>
-                        </div>
-                        <div class="section-col-title">
-                            <h2>Elevate</h2>
-                            <p class="--mobile">Discover More &rarr;</p>
-                        </div>
-                        <div class="section-col-number">
-                            <h1>1</h1>
-                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="nav-items">
+                <div class="nav-item"><a href="/about.html">About</a></div>
+                <div class="nav-item"><a href="/contact.html">Contact</a></div>
+            </div>
+        </div>
+    </nav>
+    <div class="main-container">
+        <section class="practice-areas-hero-section">
+            <div class="practice-areas-hero-wrapper">
+                <div class="practice-areas-hero-text">
+                    <span class="sub-header">Practice Areas</span>
+                    <h1>We are Here to Assist You in Resolving Your Legal Matters.</h1>
+                    <p>We assist our clients in various business areas within basic infrastructure: Construction, Real
+                        Estate, Energy and Industry, Corporate & Finance as well as Technology and Digitalization.</p>
+                    <a href="#" class="primary-btn">
+                        <span>Book Appointment</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path
+                                d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="practice-areas-hero-images">
+                    <div>
+                        <!-- <img src="https://images.pexels.com/photos/4427550/pexels-photo-4427550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="Placeholder Image"> -->
                     </div>
-                    <div class="section-col">
-                        <div class="section-col-media">
-                            <img src="https://images.unsplash.com/photo-1505547828843-176834e42154?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="section-col-image">
-                        </div>
-                        <div class="section-col-caption --desktop">
-                            <span>
-                                This is the title of the card
-                            </span>
-                        </div>
-                        <div class="section-col-title">
-                            <h2>Elevate</h2>
-                            <p class="--mobile">Discover More &rarr;</p>
-                        </div>
-                        <div class="section-col-number">
-                            <h1>2</h1>
-                        </div>
+                </div>
+            </div>
+        </section>
+
+
+    <div class="expertise-section container-default">
+        <div class="expertise-container">
+            <span class="sub-header">Our Expertise</span>
+            <h2>Our Legal Practice Areas</h2>
+            <p>
+                Nucimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+                ruas molestias excepturi sint occaecati cupiditate non provident.
+            </p>
+        </div>
+
+        <div class="practice-areas-list">
+            <div class="practice-card">
+                <img src="/assets/img/icons/document.png" alt="Immigration Law">
+                <h4>Property</h4>
+                <p>Aute irure dolor in reprehenderit in voluptate velit esse cillum maiores alias...</p>
+                <button class="nav-btn" id="nextBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path
+                            d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="practice-card">
+                <img src="/assets/img/icons/document.png" alt="Immigration Law">
+                <h4>Litigation</h4>
+                <p>Aute irure dolor in reprehenderit in voluptate velit esse cillum maiores alias...</p>
+                <button class="nav-btn" id="nextBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path
+                            d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="practice-card">
+                <img src="/assets/img/icons/document.png" alt="Immigration Law">
+                <h4>Tax</h4>
+                <p>Aute irure dolor in reprehenderit in voluptate velit esse cillum maiores alias...</p>
+                <button class="nav-btn" id="nextBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path
+                            d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="practice-card">
+                <img src="/assets/img/icons/document.png" alt="Immigration Law">
+                <h4>Competition</h4>
+                <p>Aute irure dolor in reprehenderit in voluptate velit esse cillum maiores alias...</p>
+                <button class="nav-btn" id="nextBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path
+                            d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="practice-card">
+                <img src="/assets/img/icons/document.png" alt="Immigration Law">
+                <h4>Construction</h4>
+                <p>Aute irure dolor in reprehenderit in voluptate velit esse cillum maiores alias...</p>
+                <button class="nav-btn" id="nextBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path
+                            d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="practice-card">
+                <img src="/assets/img/icons/document.png" alt="Immigration Law">
+                <h4>International Trade</h4>
+                <p>Aute irure dolor in reprehenderit in voluptate velit esse cillum maiores alias...</p>
+                <button class="nav-btn" id="nextBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path
+                            d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="practice-card">
+                <img src="/assets/img/icons/document.png" alt="Immigration Law">
+                <h4>Pension Funds</h4>
+                <p>Aute irure dolor in reprehenderit in voluptate velit esse cillum maiores alias...</p>
+                <button class="nav-btn" id="nextBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path
+                            d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="practice-card">
+                <img src="/assets/img/icons/document.png" alt="Immigration Law">
+                <h4>Public Procurement</h4>
+                <p>Aute irure dolor in reprehenderit in voluptate velit esse cillum maiores alias...</p>
+                <button class="nav-btn" id="nextBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path
+                            d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="practice-card">
+                <img src="/assets/img/icons/document.png" alt="Immigration Law">
+                <h4>Mergers & Acquisitions</h4>
+                <p>Aute irure dolor in reprehenderit in voluptate velit esse cillum maiores alias...</p>
+                <button class="nav-btn" id="nextBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path
+                            d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="practice-card">
+                <img src="/assets/img/icons/document.png" alt="Immigration Law">
+                <h4>Company Secretarial Services</h4>
+                <p>Aute irure dolor in reprehenderit in voluptate velit esse cillum maiores alias...</p>
+                <button class="nav-btn" id="nextBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path
+                            d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="practice-card">
+                <img src="/assets/img/icons/document.png" alt="Immigration Law">
+                <h4>Insolvency & Restructuring</h4>
+                <p>Aute irure dolor in reprehenderit in voluptate velit esse cillum maiores alias...</p>
+                <button class="nav-btn" id="nextBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path
+                            d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="practice-card">
+                <img src="/assets/img/icons/document.png" alt="Immigration Law">
+                <h4>Employment Law & Industrial Relations</h4>
+                <p>Aute irure dolor in reprehenderit in voluptate velit esse cillum maiores alias...</p>
+                <button class="nav-btn" id="nextBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path
+                            d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-wrap">
+                <div class="footer-content">
+                    <div class="footer-left">
+                        <span class="footer-description">Get in touch</span>
+                        <p class="footer-info">Get in touch with us. Let’s work together to find the best legal
+                            solutions for your needs. Reach out to us at <a href="mailto:partners@monthemarumo.com"
+                                class="email-link">partners@monthemarumo.com</a></p>
                     </div>
-                    <div class="section-col">
-                        <div class="section-col-media">
-                            <img src="https://images.unsplash.com/photo-1505547828843-176834e42154?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="section-col-image">
+                    <div class="footer-right">
+                        <div class="contact-info">
+                            <span class="footer-description">Where To Find Us</span>
+                            <p>
+                                Unit 8G Portion 122 Millenium Park <br>
+                                P.O.Box 1991 <br>
+                                Gaborone
+                            </p>
                         </div>
-                        <div class="section-col-caption --desktop">
-                            <span>
-                                This is the title of the card
-                            </span>
-                        </div>
-                        <div class="section-col-title">
-                            <h2>Elevate</h2>
-                            <p class="--mobile">Discover More &rarr;</p>
-                        </div>
-                        <div class="section-col-number">
-                            <h1>3</h1>
-                        </div>
-                    </div>
-                    <div class="section-col">
-                        <div class="section-col-media">
-                            <img src="https://images.unsplash.com/photo-1505547828843-176834e42154?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="section-col-image">
-                        </div>
-                        <div class="section-col-caption --desktop">
-                            <span>
-                                This is the title of the card
-                            </span>
-                        </div>
-                        <div class="section-col-title">
-                            <h2>Elevate</h2>
-                            <p class="--mobile">Discover More &rarr;</p>
-                        </div>
-                        <div class="section-col-number">
-                            <h1>4</h1>
+                        <div class="contact-info">
+                            <span class="footer-description"><strong>contact info</strong></span>
+                            <p>Telephone: +267 395 1984</p>
+                            <p>Fax: +267 318 5016</p>
                         </div>
                     </div>
                 </div>
-
             </div>
-
-        </div>
-    </main>
-
-    <!-- <nav>
-        <div class="nav-items">
-            <div class="nav-item">
-                <a href="/practiceareas.html">practice areas</a>
-            </div>
-            <div class="nav-item">
-                <a href="#">attorneys</a>
-            </div>
-        </div>
-        <div class="nav-items">
-            <div class="nav-item">
-                <a href="/">
-                    <div id="logo">
-                        <img src="assets/img/monthe-marumo&co-logo.svg" alt="" srcset="">
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <div class="footer-bottom-left-social">
+                        <ul class="footer-social">
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+                                        style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
+                                        <path
+                                            d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592 c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20 c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 304"
+                                        style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
+                                        <path
+                                            d="M19.633,7.997c0.013,0.175,0.013,0.349,0.013,0.523c0,5.325-4.053,11.461-11.46,11.461c-2.282,0-4.402-0.661-6.186-1.809 c0.324,0.037,0.636,0.05,0.973,0.05c1.883,0,3.616-0.636,5.001-1.721c-1.771-0.037-3.255-1.197-3.767-2.793 c0.249,0.037,0.499,0.062,0.761,0.062c0.361,0,0.724-0.05,1.061-0.137c-1.847-0.374-3.23-1.995-3.23-3.953v-0.05 c0.537,0.299,1.16,0.486,1.82,0.511C3.534,9.419,2.823,8.184,2.823,6.787c0-0.748,0.199-1.434,0.548-2.032 c1.983,2.443,4.964,4.04,8.306,4.215c-0.062-0.3-0.1-0.611-0.1-0.923c0-2.22,1.796-4.028,4.028-4.028 c1.16,0,2.207,0.486,2.943,1.272c0.91-0.175,1.782-0.512,2.556-0.973c-0.299,0.935-0.936,1.721-1.771,2.22 c0.811-0.088,1.597-0.312,2.319-0.624C21.104,6.712,20.419,7.423,19.633,7.997z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+                                        style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
+                                        <path
+                                            d="M11.999,7.377c-2.554,0-4.623,2.07-4.623,4.623c0,2.554,2.069,4.624,4.623,4.624c2.552,0,4.623-2.07,4.623-4.624 C16.622,9.447,14.551,7.377,11.999,7.377L11.999,7.377z M11.999,15.004c-1.659,0-3.004-1.345-3.004-3.003 c0-1.659,1.345-3.003,3.004-3.003s3.002,1.344,3.002,3.003C15.001,13.659,13.658,15.004,11.999,15.004L11.999,15.004z">
+                                        </path>
+                                        <circle cx="16.806" cy="7.207" r="1.078"></circle>
+                                        <path
+                                            d="M20.533,6.111c-0.469-1.209-1.424-2.165-2.633-2.632c-0.699-0.263-1.438-0.404-2.186-0.42 c-0.963-0.042-1.268-0.054-3.71-0.054s-2.755,0-3.71,0.054C7.548,3.074,6.809,3.215,6.11,3.479C4.9,3.946,3.945,4.902,3.477,6.111 c-0.263,0.7-0.404,1.438-0.419,2.186c-0.043,0.962-0.056,1.267-0.056,3.71c0,2.442,0,2.753,0.056,3.71 c0.015,0.748,0.156,1.486,0.419,2.187c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45 c0.963,0.042,1.268,0.055,3.71,0.055s2.755,0,3.71-0.055c0.747-0.015,1.486-0.157,2.186-0.419c1.209-0.469,2.164-1.424,2.633-2.633 c0.263-0.7,0.404-1.438,0.419-2.186c0.043-0.962,0.056-1.267,0.056-3.71s0-2.753-0.056-3.71C20.941,7.57,20.801,6.819,20.533,6.111z M19.315,15.643c-0.007,0.576-0.111,1.147-0.311,1.688c-0.305,0.787-0.926,1.409-1.712,1.711c-0.535,0.199-1.099,0.303-1.67,0.311 c-0.95,0.044-1.218,0.055-3.654,0.055c-2.438,0-2.687,0-3.655-0.055c-0.569-0.007-1.135-0.112-1.669-0.311 c-0.789-0.301-1.414-0.923-1.719-1.711c-0.196-0.534-0.302-1.099-0.311-1.669c-0.043-0.95-0.053-1.218-0.053-3.654 c0-2.437,0-2.686,0.053-3.655c0.007-0.576,0.111-1.146,0.311-1.687c0.305-0.789,0.93-1.41,1.719-1.712 c0.534-0.198,1.1-0.303,1.669-0.311c0.951-0.043,1.218-0.055,3.655-0.055c2.437,0,2.687,0,3.654,0.055 c0.571,0.007,1.135,0.112,1.67,0.311c0.786,0.303,1.407,0.925,1.712,1.712c0.196,0.534,0.302,1.099,0.311,1.669 c0.043,0.951,0.054,1.218,0.054,3.655c0,2.436,0,2.698-0.043,3.654H19.315z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                </a>
+                </div>
+                <div class="footer-bottom-right">
+                    <span>2024 &copy; Monthe Marumo & Co. All Rights Reserved </a></p>
+                </div>
             </div>
-        </div>
-        <div class="nav-items">
-            <div class="nav-item">
-                <a href="/about.html">about</a>
-            </div>
-            <div class="nav-item">
-                <a href="#">contact</a>
-            </div>
-        </div>
-    </nav> -->
+        </footer>
+    </div>
 
-    <script src="https://cdjns.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="/js/pages.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/smooth-scrollbar@8.6.3/dist/smooth-scrollbar.js"></script> -->
+    <script>
+        // Team Animation
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Pin the header to stick 10% from the top
+        gsap.to('.team-header', {
+            scrollTrigger: {
+                trigger: '.team-section', // Trigger when the section is in view
+                start: 'top top', // Start when the section reaches the top of the viewport
+                end: 'bottom top', // End when the section scrolls past the top of the viewport
+                scrub: true, // Smooth scrolling behavior
+                pin: '.team-header', // Pin the header during scrolling
+                // markers: true, // Optional, for debugging purposes
+                onLeave: () => {
+                    // Release the pin once the section scroll is complete
+                },
+                onEnterBack: () => {
+                    // Make sure the header comes back when scrolling back into the section
+                }
+            }
+        });
+
+        // Stagger animation for cards when they come into view
+        gsap.to('.team-card', {
+            scrollTrigger: {
+                trigger: '.team-cards',
+                start: 'top 80%', // Start animation when card enters 80% of the viewport
+                end: 'bottom 20%', // End animation when card is completely in view
+                scrub: true,
+                // markers: true, // Optional, for debugging purposes
+            },
+            opacity: 1, // Fade in the cards
+            y: 0, // Move cards to their final position
+            stagger: 0.2, // Stagger the animation for each card
+            duration: 1, // Duration of the animation for each card
+        });
+
+        // Animate the sticky header out smoothly after scrolling through
+        gsap.to('.team-header', {
+            scrollTrigger: {
+                trigger: '.team-cards',
+                start: 'top bottom', // Start when the cards section starts to leave the viewport
+                end: 'bottom top', // End when the cards section leaves the viewport
+                scrub: 1, // Smooth animation on scroll
+                // opacity: 0, // Fade out the header text
+                duration: 0.5, // Duration of the fade out
+            }
+        });
+
+        // Gallery Animation
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: ".grid-container",
+                start: "top top",
+                end: () => innerHeight * 4,
+                scrub: true,
+                pin: ".grid",
+                anticipatePin: 1
+            }
+        })
+            .set(".gridBlock:not(.centerBlock)", { autoAlpha: 0 })
+            .to(".gridBlock:not(.centerBlock)", { duration: 0.1, autoAlpha: 1 }, 0.001)
+            .from(".gridLayer", {
+                scale: 3.3333,
+                ease: "none",
+            });
+
+        const images = [
+            '1.jpg',
+            'https://images.unsplash.com/photo-1642911353098-42efaae7f6d4?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            '3.jpg',
+            '4.jpg',
+            'https://images.unsplash.com/photo-1628062699790-7c45262b82b4?q=80&w=3432&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            'https://images.unsplash.com/photo-1473186505569-9c61870c11f9?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+
+
+        ];
+
+        const size = Math.max(innerWidth, innerHeight);
+        gsap.set('.gridBlock', { backgroundImage: i => `url(${images[i % images.length]})` });
+        // `url(${images[i % images.length]})
+
+        const bigImg = new Image();
+        bigImg.addEventListener("load", function () {
+            gsap.to(".centerPiece .gridBlock", { autoAlpha: 1, duration: 0.5 });
+        });
+
+
+        bigImg.src = `https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`;
+    </script>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        document.querySelectorAll('.reveal-type').forEach((char) => {
+            const bg = char.dataset.bgColor;
+            const fg = char.dataset.fgColor;
+
+            const text = new SplitType(char, { types: 'chars' });
+
+            gsap.fromTo(text.chars, {
+                color: bg,
+            }, {
+                color: fg,
+                duration: 0.3,
+                stagger: 0.02,
+                scrollTrigger: {
+                    trigger: char,
+                    start: 'top 80%',
+                    end: 'top 20%',
+                    scrub: true,
+                    markers: false,
+                    toggleActions: 'play play reverse reverse'
+                }
+            });
+        });
+
+        const tl = gsap.timeline();
+
+        tl.from(".line span", 1.8, {
+            y: 100,
+            ease: "power4.out",
+            delay: 1,
+            skewY: 7,
+            stagger: {
+                amount: 0.3
+            }
+        })
+
+        const lenis = new Lenis();
+
+        lenis.on('scroll', (e) => {
+            console.log(e);
+        });
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+    </script>
+
+    <script>
+        // Loader Animations
+        const textWrapper = document.querySelector(".loader-text");
+        textWrapper.innerHTML = textWrapper.textContent.replace(
+            /\S/g,
+            "<span class='letter'>$&</span>"
+        );
+
+        anime.timeline().add({
+            targets: ".loader-text .letter",
+            translateX: [40, 0],
+            opacity: [0, 1],
+            easing: "easeOutExpo",
+            duration: 1200,
+            delay: (el, i) => 2400 + 30 * i,
+        });
+
+        gsap.from(".loader-wrapper", 2, { scale: 0.8, ease: "power1.inOut" });
+        gsap.from(".loader", 2, { top: "100%", ease: "power3.inOut" });
+        gsap.to(".loader-wrapper, .pre-loader", 1, { scale: 1.5, opacity: 0, display: "none", ease: "power3.inOut", delay: 2 });
+        gsap.from(".revealer", 1, { width: "0", ease: "power3.inOut", delay: 3 });
+        gsap.to(".revealer", 0.8, { left: "100%", ease: "power3.inOut", delay: 4 });
+        gsap.to(".loader-text-wrapper", 0.2, { opacity: 0, display: "none", ease: "power3.inOut", delay: 4 });
+        gsap.from(".col-left", 1, { left: "-100%", ease: "power3.inOut", delay: 4.5 });
+        gsap.from(".col-left .copy > div", 1, { x: -40, opacity: 0, ease: "power3.inOut", delay: 5, stagger: { amount: 0.3 } });
+        gsap.from(".col-right .header", 1, { x: -20, opacity: 0, ease: "power3.inOut", delay: 5.5 });
+
+        let currentImageIndex = 0;
+        const heroSection = document.querySelector(".hero-section");
+        const heroImage = heroSection.querySelector(".hero-img img");
+        const header = heroSection.querySelector(".header");
+        const subHeader = heroSection.querySelector(".sub-header");
+        const info = heroSection.querySelector(".info");
+
+        function updateHeroImage() {
+            const image = heroImages[currentImageIndex];
+            heroImage.src = image.src;
+            header.textContent = image.header;
+            subHeader.textContent = image.subHeader;
+            info.textContent = image.info;
+        }
+
+        document.getElementById("prevBtn").addEventListener("click", () => {
+            currentImageIndex = (currentImageIndex === 0) ? heroImages.length - 1 : currentImageIndex - 1;
+            updateHeroImage();
+        });
+
+        document.getElementById("nextBtn").addEventListener("click", () => {
+            currentImageIndex = (currentImageIndex + 1) % heroImages.length;
+            updateHeroImage();
+        });
+
+        updateHeroImage();
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const carousel = document.querySelector(".carousel");
+            const images = document.querySelectorAll(".carousel img");
+
+            // Duplicate images for infinite effect
+            const totalImages = images.length;
+            for (let i = 0; i < totalImages; i++) {
+                const clone = images[i].cloneNode(true);
+                carousel.appendChild(clone);
+            }
+
+            // GSAP animation for infinite carousel
+            gsap.to(".carousel", {
+                x: () => `-${carousel.scrollWidth / 2}`, // Move half the duplicated content
+                duration: 20,
+                ease: "linear",
+                repeat: -1,
+            });
+        });
+
+    </script>
+    <script src="./js/navbar.js"></script>
+
+
 </body>
+
 </html>
