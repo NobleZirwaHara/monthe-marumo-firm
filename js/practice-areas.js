@@ -89,11 +89,28 @@ function createPracticeCard(practice) {
     `;
 }
 
-// Function to render all practice cards
-function renderPracticeCards() {
-    const practiceAreasList = document.getElementById('practiceAreasList');
-    practiceAreasList.innerHTML = practiceAreas.map(createPracticeCard).join('');
-}
+    // Function to render all practice cards
+    function renderPracticeCards() {
+        const practiceAreasList = document.getElementById('practiceAreasList');
+        practiceAreasList.innerHTML = practiceAreas.map(createPracticeCard).join('');
 
-// Call the function to render the practice cards
-renderPracticeCards();
+        // GSAP ScrollTrigger animation for the cards
+        gsap.utils.toArray(".practice-card").forEach(card => {
+            gsap.from(card, {
+                opacity: 0,
+                y: 100, // Start from below the viewport
+                duration: 1.5, // Make the animation slower for smoothness
+                ease: "power3.out", // Smooth easing for the animation
+                scrollTrigger: {
+                    trigger: card,
+                    start: "top 80%", // Start the animation when the card is 80% into the viewport
+                    end: "top 30%", // End the animation when the card reaches 30% into the viewport
+                    scrub: true, // Smooth scroll animation
+                    toggleActions: "play reverse play reverse", // Allow reverse animation when scrolling up
+                }
+            });
+        });
+    }
+
+    // Call the function to render the practice cards
+    renderPracticeCards();
