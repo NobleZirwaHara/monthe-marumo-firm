@@ -18,6 +18,8 @@
     --primary: #a02061;
     --secondary: #f4f4f4;
     --bg-color: #fffbfd;
+    --text: #575757;
+    --text-header: #282828;
 }
 
 html,
@@ -1191,6 +1193,8 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-height: 700px;
+    height: 100%;
 }
 
 .practice-card:hover {
@@ -1215,14 +1219,14 @@ nav {
 
 .practice-card h4 {
     font-size: 1.3rem;
-    color: #4a4a4a;
+    color:  var(--text-header);
     z-index: 2; /* Ensures text stays above the background overlay */
 }
 
 .practice-card p {
     font-size: 1rem;
-    color: #777;
-    margin-bottom: 20px;
+    color: var(--text);
+    margin: 20px;
     z-index: 2; /* Ensures text stays above the background overlay */
 }
 
@@ -1236,6 +1240,50 @@ nav {
 
 .practice-card a:hover {
     color: #6a0dad;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .practice-areas-hero-section {
+        
+    }
+
+    .practice-areas-hero-images{
+        display: none !important;
+    }
+
+    .practice-areas-hero-text{
+        max-width: 100% !important;
+    }
+
+    .expertise-container{
+        width: 100%;
+    }
+
+
+
+}
+
+
+/* For tablets and smaller screens (up to 768px) */
+@media (max-width: 768px) {
+    .practice-areas-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        padding: 2rem; /* Adjust padding for smaller screens */
+    }
+}
+
+/* For mobile screens (up to 480px) */
+@media (max-width: 480px) {
+    .practice-areas-list {
+        grid-template-columns: 1fr; /* 1 column */
+        padding: 1rem; /* Adjust padding for very small screens */
+    }
+
+    .practice-card p{
+        margin: 10px;
+    }
 }
 /* --
 /* -----------------------------------------------
@@ -1603,7 +1651,7 @@ nav {
 
     .team-section,
     .profile-section,
-    .footer {
+    .footer, .practice-areas-hero-section, .container-default {
         padding: 10rem 2rem;
         margin: 0 auto;
         margin-top: auto;
