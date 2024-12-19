@@ -1345,11 +1345,14 @@ nav {
     margin-bottom: 15px;
 }
 
-.practice-item-container{
-    align-items: center;
-    padding: 10rem 10rem;
-    width: 100%;
-    margin: 0 auto;
+
+
+.practice-item-container .contact-info{
+    background-color: var(--primary);
+    padding: 2rem;
+    color: var(--bg-color);
+    border-radius: 1rem;
+    display: none;
 }
 
 .sidebar a.active {
@@ -1363,6 +1366,7 @@ nav {
     padding: 4rem 10rem; /* Adjust padding as needed */
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 4rem;
     min-height: 100vh;
     align-items: flex-start; /* Align items at the top */
     position: relative;
