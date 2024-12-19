@@ -297,36 +297,6 @@
             }
         });
 
-        // Gallery Animation
-        gsap.timeline({
-            scrollTrigger: {
-                trigger: ".grid-container",
-                start: "top top",
-                end: () => innerHeight * 4,
-                scrub: true,
-                pin: ".grid",
-                anticipatePin: 1
-            }
-        })
-            .set(".gridBlock:not(.centerBlock)", { autoAlpha: 0 })
-            .to(".gridBlock:not(.centerBlock)", { duration: 0.1, autoAlpha: 1 }, 0.001)
-            .from(".gridLayer", {
-                scale: 3.3333,
-                ease: "none",
-            });
-
-        const images = [
-            '1.jpg',
-            'https://images.unsplash.com/photo-1642911353098-42efaae7f6d4?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-            '3.jpg',
-            '4.jpg',
-            'https://images.unsplash.com/photo-1628062699790-7c45262b82b4?q=80&w=3432&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-            'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-            'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-            'https://images.unsplash.com/photo-1473186505569-9c61870c11f9?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-
-
-        ];
 
         const size = Math.max(innerWidth, innerHeight);
         gsap.set('.gridBlock', { backgroundImage: i => `url(${images[i % images.length]})` });

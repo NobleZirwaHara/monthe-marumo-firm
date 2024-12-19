@@ -147,6 +147,10 @@ section {
     place-content: center;
 }
 
+section .home-page-statement{
+
+}
+
 section p {
     font-size: clamp(2rem, 4vw, 6rem);
 }
@@ -1285,6 +1289,180 @@ nav {
         margin: 10px;
     }
 }
+
+/* -----------------------------------------------
+  PRACTICE AREA SINGLE PAGE
+----------------------------------------------- */
+
+.practice-item-hero-section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 10rem;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    overflow: hidden;
+    background-attachment: fixed;
+    height: 50vh;
+}
+
+.practice-item-hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 250, 252, 0.9);
+    z-index: 1;
+}
+
+.practice-item-hero-section .header{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.practice-item-hero-section .header h1{
+    font-size: 48px;
+}
+
+.practice-item-hero-section .header p{
+    font-size: 1.2rem;
+}
+
+.practice-item-hero-section .practice-icon{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.practice-item-container{
+    align-items: center;
+    padding: 10rem 10rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sidebar a.active {
+    color: var(--primary); /* Change to your desired active color */
+    font-weight: bold;
+}
+/* General Layout */
+.practice-item-container {
+    display: flex;
+    gap: 2rem;
+    padding: 4rem 10rem; /* Adjust padding as needed */
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    align-items: flex-start; /* Align items at the top */
+    position: relative;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    position: sticky;
+    top: 2rem; /* Space from the top of the viewport */
+    padding: 2rem;
+    border-radius: 8px;
+    z-index: 10;
+}
+
+
+/* Sidebar Practice Areas */
+.practice-areas h3,
+.contact-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+/* Sidebar Links */
+.practice-areas ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.practice-areas ul li {
+    margin-bottom: 1rem;
+    position: relative;
+    border-bottom: 0.0625rem solid #d6d6d6;
+    padding: 0.2rem 1rem 1rem 0rem;
+}
+
+
+.practice-areas ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    display: flex; /* Flex layout for text and SVG */
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    transition: all 0.3s ease; /* Smooth transition for sliding */
+
+}
+
+.practice-areas ul li a .arrow {
+    transform: translateX(-10px); /* Initially hidden to the left */
+    opacity: 0; /* Initially invisible */
+    transition: all 0.3s ease; /* Smooth reveal */
+}
+
+.practice-areas ul li a:hover {
+    transform: translateX(10px); /* Slide the text to the right */
+    color: var(--primary); /* Change text color on hover */
+}
+
+.practice-areas ul li a:hover .arrow {
+    transform: translateX(0); /* Bring the arrow into view */
+    opacity: 1; /* Make the arrow visible */
+}
+
+
+
+
+/* Content Section */
+.practice-item-content {
+    flex: 3;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    padding-right: 1rem;
+    margin-top: 2rem;
+    position: relative; /* Needed for ScrollTrigger pinning */
+}
+
+/* Paragraph Styling */
+.practice-item-content p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* List Styling */
+.practice-item-content .service li {
+    margin-left: 2rem;
+}
+
+.practice-item-content .service li::marker {
+    color: var(--primary); /* Blue color for bullets */
+    font-size: 18px; /* Optional: change bullet size */
+}
+
+
+
+
+
+
 /* --
 /* -----------------------------------------------
    ATTORNEYS PAGE STYLES
@@ -1472,6 +1650,8 @@ nav {
     padding: 10rem 10rem;
     margin: 0 auto;
     margin-top: auto;
+    background-color: var(--primary);
+    color: var(--bg-color);
     position: relative !important;
 }
 
@@ -1494,7 +1674,6 @@ nav {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: #a02061;
     line-height: 2rem;
 }
 
@@ -1519,8 +1698,9 @@ nav {
 }
 
 .email-link {
-    color: #a02061;
+    color: var(--secondary);
     text-decoration: none;
+    text-decoration: underline;
 }
 
 .footer-right .contact-info,
